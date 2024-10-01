@@ -4,8 +4,11 @@ import Character from './Character';
 
 console.log('worked');
 
-console.log(sum([1, 2]));
+const person = new Character('Ivan', 'Bowman');
 
-const person = new Character('Ivan', 'Daemon');
+console.log(person);
+
+person.levelUp();
+person.damage(10);
 
 console.log(person);
