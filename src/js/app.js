@@ -4,6 +4,8 @@ import Character from './Character';
 
 console.log('worked');
 
+console.log(sum([1, 2]));
+
 const person = new Character('Ivan', 'Bowman');
 
 console.log(person);
