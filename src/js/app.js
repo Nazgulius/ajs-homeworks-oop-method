@@ -1,12 +1,9 @@
 // TODO: write your code here
-import sum from './basic';
-import Character from './Character';
+import Bowerman from './class/Bowerman';
 
 console.log('worked');
 
-console.log(sum([1, 2]));
-
-const person = new Character('Ivan', 'Bowman');
+const person = new Bowerman('Ivan');
 
 console.log(person);
 

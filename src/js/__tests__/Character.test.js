@@ -40,7 +40,7 @@ test ('character fail level up', () => {
   const result = new Bowerman('Makis', 'Bowerman');
   result.health = 0;  
 
-  expect(result.levelUp()).toThrow('You can not level up a deceased person!');
+  expect(() => result.levelUp()).toThrow('You can not level up a deceased person!');
 })
 
 test ('character damage', () => {
@@ -54,6 +54,6 @@ test ('character damage', () => {
   const result = new Bowerman('Makis', 'Bowerman');
   result.health = 0;
 
-  expect(result.damage(10)).toThrow('You are dead');
+  expect(() => result.damage(10)).toThrow('You are dead');
 })
 
