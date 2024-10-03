@@ -9,7 +9,7 @@ test('Error in type', () => {
   expect(() => new Character('Alex', 'Bow')).toThrow('Type error. The type can be: Bowerman, Swordsman, Magician, Daemon, Undead, Zombie.');
 })
 
-test('Error in name', () => {
+test('Error in create charecter', () => {
   const warrior = new Character('Alex', 'Bowerman');
   const correct = {
     attack: undefined,
@@ -50,7 +50,7 @@ test ('character damage', () => {
   expect(result.health).toBe(92.5);
 })
 
-test ('character damage', () => {
+test ('character fail damage', () => {
   const result = new Bowerman('Makis', 'Bowerman');
   result.health = 0;
 
